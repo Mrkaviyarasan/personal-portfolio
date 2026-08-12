@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kaviyarasan M — Graphic Designer &amp; Visual Storyteller</title>
+  <meta name="description"
+    content="Portfolio of Kaviyarasan M — Graphic Designer, UI/UX Designer &amp; Video Editor. Founder of Dsignpath, Coimbatore.">
+  <!-- Marks the page as script-capable before first paint, so the scroll-reveal
+       styles only hide content when there is a script able to reveal it. -->
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Playfair Display dropped: it was requested on every load but never used
+       by any rule in style.css -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Registration crop marks fixed to viewport corners -->
+  <svg class="crop-marks" aria-hidden="true">
+    <g class="crop crop-tl">
+      <line x1="0" y1="14" x2="28" y2="14" />
+      <line x1="14" y1="0" x2="14" y2="28" />
+    </g>
+    <g class="crop crop-tr">
+      <line x1="0" y1="14" x2="28" y2="14" />
+      <line x1="14" y1="0" x2="14" y2="28" />
+    </g>
+    <g class="crop crop-bl">
+      <line x1="0" y1="14" x2="28" y2="14" />
+      <line x1="14" y1="0" x2="14" y2="28" />
+    </g>
+    <g class="crop crop-br">
+      <line x1="0" y1="14" x2="28" y2="14" />
+      <line x1="14" y1="0" x2="14" y2="28" />
+    </g>
+  </svg>
+
+  <div class="progress-bar" id="progressBar"><span></span></div>
+
+  <header class="nav" id="siteNav">
+    <a href="#top" class="nav-mark" aria-label="Kaviyarasan M — home">
+      <span class="mark-box">KM</span>
+      <span class="mark-text">KAVIYARASAN&nbsp;M</span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#about" data-nav>Profile</a>
+      <a href="#experience" data-nav>Log</a>
+      <a href="#projects" data-nav>Work</a>
+      <a href="#contact" data-nav class="nav-cta">Brief Me</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main id="top">
+
+    <!-- HERO / PROOF SHEET -->
+    <section class="hero" id="hero">
+      <div class="hero-inner">
+        <!-- Dynamic time-based greeting -->
+        <div class="hero-label mono" id="heroGreeting" aria-live="polite"></div>
+
+        <h1 class="hero-name">
+          <span class="line" data-reveal>KAVIYARASAN</span>
+          <span class="line" data-reveal>M<span class="dot">.</span></span>
+        </h1>
+
+        <div class="hero-stamp mono" data-reveal>
+          GRAPHIC&nbsp;DESIGNER&nbsp;/&nbsp;VIDEO&nbsp;EDITOR
+        </div>
+
+        <div class="hero-actions" data-reveal>
+          <a href="#projects" class="btn btn-solid">Explore Work</a>
+          <a href="#contact" class="btn btn-ghost">Let's Connect</a>
+        </div>
+      </div>
+
+      <div class="hero-photo" data-reveal>
+        <div class="photo-frame">
+          <!-- Floating decorative element, anchored to the photo frame so it
+               keeps its position relative to the photo at every width -->
+          <div class="hero-float-decor" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M22 2L11 13" />
+              <path d="M22 2L15 22L11 13L2 9L22 2Z" />
+            </svg>
+          </div>
+
+          <!-- width/height describe the box the frame renders, not the file's
+               intrinsic size: with no height in CSS these attributes size the
+               image, so they must match the design (230x307). -->
+          <img src="media/kavi-portrait.webp" alt="Portrait of Kaviyarasan M" loading="eager" decoding="async"
+            fetchpriority="high" width="230" height="307">
+          <span class="photo-tag mono">PANTONE&nbsp;APPROVED</span>
+        </div>
+        <div class="photo-swatches" aria-hidden="true">
+          <i class="sw c"></i><i class="sw m"></i><i class="sw y"></i><i class="sw k"></i>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-cue mono" aria-label="Scroll to profile">SCROLL <span>↓</span></a>
+    </section>
+
+    <div class="cmyk-bar" role="presentation">
+      <span class="cmyk-seg c"></span><span class="cmyk-seg m"></span><span class="cmyk-seg y"></span><span
+        class="cmyk-seg k"></span>
+    </div>
+
+    <!-- ABOUT / PROFILE -->
+    <section class="section" id="about">
+      <div class="section-head">
+        <span class="tag mono" data-reveal>01 — PROFILE</span>
+        <h2 data-reveal>Built on imagination,<br>shipped with structure.</h2>
+      </div>
+
+      <div class="profile-prose" data-reveal>
+        <p>I'm a creative designer with a passion for crafting clean, meaningful, and impactful visual experiences. With
+          expertise in graphic design, branding, UI/UX, and digital content, I enjoy transforming ideas into designs
+          that are visually engaging and purpose-driven.</p>
+        <p>My background in Fashion Design has strengthened my creative thinking, attention to detail, and understanding
+          of aesthetics, allowing me to approach every project from a unique perspective.</p>
+        <p>I'm always learning, exploring new trends, and refining my skills to create better design solutions.</p>
+      </div>
+
+      <!-- PASSIONS -->
+      <div class="passions-section" data-reveal>
+        <h3 class="passions-heading mono">PASSIONS</h3>
+        <div class="passions-grid">
+          <div class="passion-card" tabindex="0">
+            <div class="passion-icon" aria-hidden="true">📸</div>
+            <h4 class="passion-title">Photography</h4>
+            <p class="passion-desc">I love capturing moments and discovering the emotions, nuances, and perspectives
+              that often go unnoticed.</p>
+          </div>
+          <div class="passion-card" tabindex="0">
+            <div class="passion-icon" aria-hidden="true">🎬</div>
+            <h4 class="passion-title">Content Creation</h4>
+            <p class="passion-desc">I love turning simple thoughts into visuals that connect, inspire, and make people
+              feel something.</p>
+          </div>
+          <div class="passion-card" tabindex="0">
+            <div class="passion-icon" aria-hidden="true">🕴️</div>
+            <h4 class="passion-title">Modelling</h4>
+            <p class="passion-desc">Style, confidence, and expression have always fascinated me—because sometimes a
+              single pose can tell an entire story.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE / PRODUCTION LOG -->
+    <section class="section" id="experience">
+      <div class="section-head">
+        <span class="tag mono" data-reveal>02 — PRODUCTION LOG</span>
+        <h2 data-reveal>Experience.</h2>
+        <p class="section-note" data-reveal>Over 2.5 years of experience creating impactful
+          designs across branding, graphic design, UI/UX, and digital content.</p>
+      </div>
+
+      <div class="timeline-wrap" data-reveal>
+        <div class="timeline-track">
+          <div class="timeline-group">
+            <article class="tl-card">
+              <div class="tl-card-top">
+                <span class="tl-date mono">AUG 2024 — PRESENT</span>
+                <span class="tl-status mono active">ACTIVE</span>
+              </div>
+              <h3>Sanads Digital</h3>
+              <p class="role">Graphic Designer &amp; Video Editor</p>
+              <p>Crafting engaging content across digital and print platforms, with designs
+                built to align with brand identity and connect with the audience.</p>
+            </article>
+            <article class="tl-card">
+              <div class="tl-card-top">
+                <span class="tl-date mono">SEP 2023 — PRESENT</span>
+                <span class="tl-status mono active">ACTIVE</span>
+              </div>
+              <h3>Dsignpath</h3>
+              <p class="role">Founder &amp; Freelancer</p>
+              <p>A creative studio specialising in graphic design, branding, and visual
+                content creation — focused on unique, high-quality designs that enhance brands.</p>
+            </article>
+            <article class="tl-card">
+              <div class="tl-card-top">
+                <span class="tl-date mono">APR 2024 — JUL 2024</span>
+                <span class="tl-status mono">WRAPPED</span>
+              </div>
+              <h3>The Dot Studio</h3>
+              <p class="role">Graphic Designer &amp; UI Designer</p>
+              <p>Designed visuals for social media, marketing campaigns and branding
+                materials, and developed user-friendly UI aligned with overall design strategy.</p>
+            </article>
+            <article class="tl-card">
+              <div class="tl-card-top">
+                <span class="tl-date mono">JAN 2024 — MAR 2024</span>
+                <span class="tl-status mono">WRAPPED</span>
+              </div>
+              <h3>Square Fabricators</h3>
+              <p class="role">Graphic Designer</p>
+              <p>Created visual content for events — posters, backdrops, invitations and
+                social media designs aligned with each event's theme.</p>
+            </article>
+            <article class="tl-card">
+              <div class="tl-card-top">
+                <span class="tl-date mono">OCT 2023 — NOV 2023</span>
+                <span class="tl-status mono">WRAPPED</span>
+              </div>
+              <h3>UX/UI Design — Internship</h3>
+              <p class="role">UX/UI Designer</p>
+              <p>Mentored students on design principles, wireframing and prototyping while
+                sharpening user-centered design expertise.</p>
+            </article>
+          </div>
+          <div class="timeline-group" aria-hidden="true">
+            <article class="tl-card">
+              <div class="tl-card-top">
+                <span class="tl-date mono">AUG 2024 — PRESENT</span>
+                <span class="tl-status mono active">ACTIVE</span>
+              </div>
+              <h3>Sanads Digital</h3>
+              <p class="role">Graphic Designer &amp; Video Editor</p>
+              <p>Crafting engaging content across digital and print platforms, with designs
+                built to align with brand identity and connect with the audience.</p>
+            </article>
+            <article class="tl-card">
+              <div class="tl-card-top">
+                <span class="tl-date mono">SEP 2023 — PRESENT</span>
+                <span class="tl-status mono active">ACTIVE</span>
+              </div>
+              <h3>Dsignpath</h3>
+              <p class="role">Founder &amp; Freelancer</p>
+              <p>A creative studio specialising in graphic design, branding, and visual
+                content creation — focused on unique, high-quality designs that enhance brands.</p>
+            </article>
+            <article class="tl-card">
+              <div class="tl-card-top">
+                <span class="tl-date mono">APR 2024 — JUL 2024</span>
+                <span class="tl-status mono">WRAPPED</span>
+              </div>
+              <h3>The Dot Studio</h3>
+              <p class="role">Graphic Designer &amp; UI Designer</p>
+              <p>Designed visuals for social media, marketing campaigns and branding
+                materials, and developed user-friendly UI aligned with overall design strategy.</p>
+            </article>
+            <article class="tl-card">
+              <div class="tl-card-top">
+                <span class="tl-date mono">JAN 2024 — MAR 2024</span>
+                <span class="tl-status mono">WRAPPED</span>
+              </div>
+              <h3>Square Fabricators</h3>
+              <p class="role">Graphic Designer</p>
+              <p>Created visual content for events — posters, backdrops, invitations and
+                social media designs aligned with each event's theme.</p>
+            </article>
+            <article class="tl-card">
+              <div class="tl-card-top">
+                <span class="tl-date mono">OCT 2023 — NOV 2023</span>
+                <span class="tl-status mono">WRAPPED</span>
+              </div>
+              <h3>UX/UI Design — Internship</h3>
+              <p class="role">UX/UI Designer</p>
+              <p>Mentored students on design principles, wireframing and prototyping while
+                sharpening user-centered design expertise.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+
+      <!-- TOOLKIT MARQUEE — seamless infinite loop -->
+      <div class="tools-marquee" data-reveal>
+        <span class="mono tools-label">TOOLKIT</span>
+        <div class="marquee-track marquee-track--icons" id="toolkitTrack">
+          <!-- JS will duplicate groups for seamless loop -->
+          <div class="marquee-group marquee-group--icons" id="toolkitGroup">
+            <img src="Icon%20set/Asset%2012.png" alt="Tool Icon" class="tool-icon" loading="lazy" decoding="async"
+              width="48" height="48">
+            <img src="Icon%20set/Asset%2013.png" alt="Tool Icon" class="tool-icon" loading="lazy" decoding="async"
+              width="48" height="48">
+            <img src="Icon%20set/Asset%2014.png" alt="Tool Icon" class="tool-icon" loading="lazy" decoding="async"
+              width="48" height="48">
+            <img src="Icon%20set/Asset%2015.png" alt="Tool Icon" class="tool-icon" loading="lazy" decoding="async"
+              width="48" height="48">
+            <img src="Icon%20set/Asset%2016.png" alt="Tool Icon" class="tool-icon" loading="lazy" decoding="async"
+              width="48" height="48">
+            <img src="Icon%20set/Asset%2017.png" alt="Tool Icon" class="tool-icon" loading="lazy" decoding="async"
+              width="48" height="48">
+            <img src="Icon%20set/Asset%2018.png" alt="Tool Icon" class="tool-icon" loading="lazy" decoding="async"
+              width="48" height="48">
+            <img src="Icon%20set/Asset%2019.png" alt="Tool Icon" class="tool-icon" loading="lazy" decoding="async"
+              width="48" height="48">
+          </div>
+          <div class="marquee-group marquee-group--icons" aria-hidden="true">
+            <img src="Icon%20set/Asset%2012.png" alt="Tool Icon" class="tool-icon" loading="lazy" decoding="async"
+              width="48" height="48">
+            <img src="Icon%20set/Asset%2013.png" alt="Tool Icon" class="tool-icon" loading="lazy" decoding="async"
+              width="48" height="48">
+            <img src="Icon%20set/Asset%2014.png" alt="Tool Icon" class="tool-icon" loading="lazy" decoding="async"
+              width="48" height="48">
+            <img src="Icon%20set/Asset%2015.png" alt="Tool Icon" class="tool-icon" loading="lazy" decoding="async"
+              width="48" height="48">
+            <img src="Icon%20set/Asset%2016.png" alt="Tool Icon" class="tool-icon" loading="lazy" decoding="async"
+              width="48" height="48">
+            <img src="Icon%20set/Asset%2017.png" alt="Tool Icon" class="tool-icon" loading="lazy" decoding="async"
+              width="48" height="48">
+            <img src="Icon%20set/Asset%2018.png" alt="Tool Icon" class="tool-icon" loading="lazy" decoding="async"
+              width="48" height="48">
+            <img src="Icon%20set/Asset%2019.png" alt="Tool Icon" class="tool-icon" loading="lazy" decoding="async"
+              width="48" height="48">
+          </div>
+          <div class="marquee-group marquee-group--icons" aria-hidden="true">
+            <img src="Icon%20set/Asset%2012.png" alt="Tool Icon" class="tool-icon" loading="lazy" decoding="async"
+              width="48" height="48">
+            <img src="Icon%20set/Asset%2013.png" alt="Tool Icon" class="tool-icon" loading="lazy" decoding="async"
+              width="48" height="48">
+            <img src="Icon%20set/Asset%2014.png" alt="Tool Icon" class="tool-icon" loading="lazy" decoding="async"
+              width="48" height="48">
+            <img src="Icon%20set/Asset%2015.png" alt="Tool Icon" class="tool-icon" loading="lazy" decoding="async"
+              width="48" height="48">
+            <img src="Icon%20set/Asset%2016.png" alt="Tool Icon" class="tool-icon" loading="lazy" decoding="async"
+              width="48" height="48">
+            <img src="Icon%20set/Asset%2017.png" alt="Tool Icon" class="tool-icon" loading="lazy" decoding="async"
+              width="48" height="48">
+            <img src="Icon%20set/Asset%2018.png" alt="Tool Icon" class="tool-icon" loading="lazy" decoding="async"
+              width="48" height="48">
+            <img src="Icon%20set/Asset%2019.png" alt="Tool Icon" class="tool-icon" loading="lazy" decoding="async"
+              width="48" height="48">
+          </div>
+          <div class="marquee-group marquee-group--icons" aria-hidden="true">
+            <img src="Icon%20set/Asset%2012.png" alt="Tool Icon" class="tool-icon" loading="lazy" decoding="async"
+              width="48" height="48">
+            <img src="Icon%20set/Asset%2013.png" alt="Tool Icon" class="tool-icon" loading="lazy" decoding="async"
+              width="48" height="48">
+            <img src="Icon%20set/Asset%2014.png" alt="Tool Icon" class="tool-icon" loading="lazy" decoding="async"
+              width="48" height="48">
+            <img src="Icon%20set/Asset%2015.png" alt="Tool Icon" class="tool-icon" loading="lazy" decoding="async"
+              width="48" height="48">
+            <img src="Icon%20set/Asset%2016.png" alt="Tool Icon" class="tool-icon" loading="lazy" decoding="async"
+              width="48" height="48">
+            <img src="Icon%20set/Asset%2017.png" alt="Tool Icon" class="tool-icon" loading="lazy" decoding="async"
+              width="48" height="48">
+            <img src="Icon%20set/Asset%2018.png" alt="Tool Icon" class="tool-icon" loading="lazy" decoding="async"
+              width="48" height="48">
+            <img src="Icon%20set/Asset%2019.png" alt="Tool Icon" class="tool-icon" loading="lazy" decoding="async"
+              width="48" height="48">
+          </div>
+        </div>
+      </div>
+
+      <div class="ai-feature-wrap" data-reveal>
+        <!-- Floating AI Icons — OUTSIDE Left Edge of Box -->
+        <div class="ai-icons-outer ai-icons-left" aria-hidden="true">
+          <img src="Ai%20icon%20set/AIcon-02.svg" alt="" loading="lazy" decoding="async" width="34" height="34"
+            class="ai-float-icon ai-icon-1">
+          <img src="Ai%20icon%20set/AIcon-06.svg" alt="" loading="lazy" decoding="async" width="34" height="34"
+            class="ai-float-icon ai-icon-2">
+          <img src="Ai%20icon%20set/AIcon-08.svg" alt="" loading="lazy" decoding="async" width="34" height="34"
+            class="ai-float-icon ai-icon-3">
+        </div>
+
+        <!-- Existing AI-Assisted Process Box (100% Preserved) -->
+        <div class="ai-feature">
+          <span class="mono ai-tag">AI&#8209;ASSISTED&nbsp;PROCESS</span>
+          <p>I leverage modern AI tools to enhance my creative process—from brainstorming
+            concepts and generating visuals to refining content and accelerating design
+            workflows. AI helps me work smarter, while every final design is shaped by
+            creativity, strategy, and human judgment.</p>
+        </div>
+
+        <!-- Floating AI Icons — OUTSIDE Right Edge of Box -->
+        <div class="ai-icons-outer ai-icons-right" aria-hidden="true">
+          <img src="Ai%20icon%20set/AIcon-10.svg" alt="" loading="lazy" decoding="async" width="34" height="34"
+            class="ai-float-icon ai-icon-4">
+          <img src="Ai%20icon%20set/AIcon-18.svg" alt="" loading="lazy" decoding="async" width="34" height="34"
+            class="ai-float-icon ai-icon-5">
+          <img src="Ai%20icon%20set/AIcon-25.svg" alt="" loading="lazy" decoding="async" width="34" height="34"
+            class="ai-float-icon ai-icon-6">
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section section-dark" id="projects">
+      <div class="section-head">
+        <span class="tag mono" data-reveal>03 — SELECTED WORK</span>
+        <h2 data-reveal>Pick a proof sheet.</h2>
+        <p class="section-note" data-reveal>Filter by category and explore selected creative work.</p>
+      </div>
+
+      <div class="tabs mono" id="tabs" data-reveal>
+        <button class="tab active" data-filter="all">All</button>
+        <button class="tab" data-filter="branding">Branding</button>
+        <button class="tab" data-filter="campaigns">Campaigns</button>
+        <button class="tab" data-filter="digital">Digital</button>
+        <button class="tab" data-filter="uiux">UI / UX</button>
+        <button class="tab" data-filter="motion">Motion</button>
+      </div>
+
+      <div class="proof-grid" id="proofGrid">
+
+        <article class="proof-card" data-cat="branding" data-reveal>
+          <div class="proof-visual">
+            <img src="media/work/branding/dazzling-stones-01.webp" alt="Dazzling stones-01" loading="lazy"
+              decoding="async" width="1400" height="1400" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+          <div class="proof-caption">
+            <span class="mono cat-tag">BRANDING</span>
+            <h3>Dazzling stones-01</h3>
+          </div>
+        </article>
+        <article class="proof-card" data-cat="branding" data-reveal>
+          <div class="proof-visual">
+            <img src="media/work/branding/fashion.webp" alt="fashion" loading="lazy" decoding="async" width="1400"
+              height="788" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+          <div class="proof-caption">
+            <span class="mono cat-tag">BRANDING</span>
+            <h3>fashion</h3>
+          </div>
+        </article>
+        <article class="proof-card" data-cat="branding" data-reveal>
+          <div class="proof-visual">
+            <img src="media/work/branding/growth-star.webp" alt="Growth star" loading="lazy" decoding="async" width="1400"
+              height="959" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+          <div class="proof-caption">
+            <span class="mono cat-tag">BRANDING</span>
+            <h3>Growth star</h3>
+          </div>
+        </article>
+        <article class="proof-card" data-cat="branding" data-reveal>
+          <div class="proof-visual">
+            <img src="media/work/branding/lwhub.webp" alt="LWHUB" loading="lazy" decoding="async" width="1400" height="959"
+              style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+          <div class="proof-caption">
+            <span class="mono cat-tag">BRANDING</span>
+            <h3>LWHUB</h3>
+          </div>
+        </article>
+        <article class="proof-card" data-cat="branding" data-reveal>
+          <div class="proof-visual">
+            <img src="media/work/branding/nimtom.webp" alt="NImtom" loading="lazy" decoding="async" width="1400"
+              height="1094" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+          <div class="proof-caption">
+            <span class="mono cat-tag">BRANDING</span>
+            <h3>NImtom</h3>
+          </div>
+        </article>
+        <article class="proof-card" data-cat="branding" data-reveal>
+          <div class="proof-visual">
+            <img src="media/work/branding/rajam-studio.webp" alt="Rajam studio" loading="lazy" decoding="async"
+              width="1400" height="786" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+          <div class="proof-caption">
+            <span class="mono cat-tag">BRANDING</span>
+            <h3>Rajam studio</h3>
+          </div>
+        </article>
+        <article class="proof-card" data-cat="branding" data-reveal>
+          <div class="proof-visual">
+            <img src="media/work/branding/synergyworks.webp" alt="SynergyWorks" loading="lazy" decoding="async"
+              width="1400" height="788" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+          <div class="proof-caption">
+            <span class="mono cat-tag">BRANDING</span>
+            <h3>SynergyWorks</h3>
+          </div>
+        </article>
+        <article class="proof-card" data-cat="branding" data-reveal>
+          <div class="proof-visual">
+            <img src="media/work/branding/tittle-1.webp" alt="Tittle 1" loading="lazy" decoding="async" width="1400"
+              height="787" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+          <div class="proof-caption">
+            <span class="mono cat-tag">BRANDING</span>
+            <h3>Tittle 1</h3>
+          </div>
+        </article>
+        <article class="proof-card" data-cat="branding" data-reveal>
+          <div class="proof-visual">
+            <img src="media/work/branding/yav.webp" alt="Yav" loading="lazy" decoding="async" width="1035" height="1400"
+              style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+          <div class="proof-caption">
+            <span class="mono cat-tag">BRANDING</span>
+            <h3>Yav</h3>
+          </div>
+        </article>
+        <article class="proof-card" data-cat="campaigns" data-reveal>
+          <div class="proof-visual">
+            <img src="media/work/campagins/abirami-ins-world-world-obesity-inv.webp"
+              alt="Abirami-Ins world World Obesity -Inv" loading="lazy" decoding="async" width="987" height="1400"
+              style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+          <div class="proof-caption">
+            <span class="mono cat-tag">CAMPAIGNS</span>
+            <h3>Abirami-Ins world World Obesity -Inv</h3>
+          </div>
+        </article>
+        <article class="proof-card" data-cat="campaigns" data-reveal>
+          <div class="proof-visual">
+            <img src="media/work/campagins/abirami-news-ad-12-cm-x-10-cm-copy.webp"
+              alt="Abirami_News Ad_12 CM x 10 CM copy" loading="lazy" decoding="async" width="1400" height="1167"
+              style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+          <div class="proof-caption">
+            <span class="mono cat-tag">CAMPAIGNS</span>
+            <h3>Abirami_News Ad_12 CM x 10 CM copy</h3>
+          </div>
+        </article>
+        <article class="proof-card" data-cat="campaigns" data-reveal>
+          <div class="proof-visual">
+            <img src="media/work/campagins/cardio-department-flex-size-8-6.webp"
+              alt="Cardio department flex size - 8 × 6" loading="lazy" decoding="async" width="1400" height="1050"
+              style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+          <div class="proof-caption">
+            <span class="mono cat-tag">CAMPAIGNS</span>
+            <h3>Cardio department flex size - 8 × 6</h3>
+          </div>
+        </article>
+        <article class="proof-card" data-cat="campaigns" data-reveal>
+          <div class="proof-visual">
+            <img src="media/work/campagins/greenink-sep-31st-invites.webp" alt="GreenInk_Sep 31st Invites" loading="lazy"
+              decoding="async" width="990" height="1400" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+          <div class="proof-caption">
+            <span class="mono cat-tag">CAMPAIGNS</span>
+            <h3>GreenInk_Sep 31st Invites</h3>
+          </div>
+        </article>
+        <article class="proof-card" data-cat="campaigns" data-reveal>
+          <div class="proof-visual">
+            <img src="media/work/campagins/high-return-properties-fb-ad.webp" alt="High return properties-FB AD"
+              loading="lazy" decoding="async" width="1400" height="1400"
+              style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+          <div class="proof-caption">
+            <span class="mono cat-tag">CAMPAIGNS</span>
+            <h3>High return properties-FB AD</h3>
+          </div>
+        </article>
+        <article class="proof-card" data-cat="campaigns" data-reveal>
+          <div class="proof-visual">
+            <img src="media/work/campagins/hr-limited-plots-available.webp" alt="HR-Limited Plots Available!"
+              loading="lazy" decoding="async" width="1120" height="1400"
+              style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+          <div class="proof-caption">
+            <span class="mono cat-tag">CAMPAIGNS</span>
+            <h3>HR-Limited Plots Available!</h3>
+          </div>
+        </article>
+        <article class="proof-card" data-cat="campaigns" data-reveal>
+          <div class="proof-visual">
+            <img src="media/work/campagins/lvs-house-warming-invit.webp" alt="LVS_House Warming invit" loading="lazy"
+              decoding="async" width="987" height="1400" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+          <div class="proof-caption">
+            <span class="mono cat-tag">CAMPAIGNS</span>
+            <h3>LVS_House Warming invit</h3>
+          </div>
+        </article>
+        <article class="proof-card" data-cat="campaigns" data-reveal>
+          <div class="proof-visual">
+            <img src="media/work/campagins/prabhanjan-vastu.webp" alt="Prabhanjan vastu" loading="lazy" decoding="async"
+              width="1400" height="1120" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+          <div class="proof-caption">
+            <span class="mono cat-tag">CAMPAIGNS</span>
+            <h3>Prabhanjan vastu</h3>
+          </div>
+        </article>
+        <article class="proof-card" data-cat="campaigns" data-reveal>
+          <div class="proof-visual">
+            <img src="media/work/campagins/road-safety-event.webp" alt="Road safety event" loading="lazy" decoding="async"
+              width="933" height="1400" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+          <div class="proof-caption">
+            <span class="mono cat-tag">CAMPAIGNS</span>
+            <h3>Road safety event</h3>
+          </div>
+        </article>
+        <article class="proof-card" data-cat="digital" data-reveal>
+          <div class="proof-visual">
+            <img src="media/work/digital/akshara-june-to-july-4.webp" alt="akshara_June to July [4]" loading="lazy"
+              decoding="async" width="1400" height="1400" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+          <div class="proof-caption">
+            <span class="mono cat-tag">DIGITAL</span>
+            <h3>akshara_June to July [4]</h3>
+          </div>
+        </article>
+        <article class="proof-card" data-cat="digital" data-reveal>
+          <div class="proof-visual">
+            <img src="media/work/digital/akshara-scl-jan-20.webp" alt="Akshara_Scl_Jan 20" loading="lazy" decoding="async"
+              width="1400" height="1400" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+          <div class="proof-caption">
+            <span class="mono cat-tag">DIGITAL</span>
+            <h3>Akshara_Scl_Jan 20</h3>
+          </div>
+        </article>
+        <article class="proof-card" data-cat="digital" data-reveal>
+          <div class="proof-visual">
+            <img src="media/work/digital/big-impressions.webp" alt="BIG Impressions" loading="lazy" decoding="async"
+              width="1400" height="1400" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+          <div class="proof-caption">
+            <span class="mono cat-tag">DIGITAL</span>
+            <h3>BIG Impressions</h3>
+          </div>
+        </article>
+        <article class="proof-card" data-cat="digital" data-reveal>
+          <div class="proof-visual">
+            <img src="media/work/digital/erode-engunthar-college-may-11.webp" alt="Erode engunthar college_May 11"
+              loading="lazy" decoding="async" width="1400" height="1400"
+              style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+          <div class="proof-caption">
+            <span class="mono cat-tag">DIGITAL</span>
+            <h3>Erode engunthar college_May 11</h3>
+          </div>
+        </article>
+        <article class="proof-card" data-cat="digital" data-reveal>
+          <div class="proof-visual">
+            <img src="media/work/digital/ever-green-4.webp" alt="Ever green 4" loading="lazy" decoding="async" width="1080"
+              height="1080" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+          <div class="proof-caption">
+            <span class="mono cat-tag">DIGITAL</span>
+            <h3>Ever green 4</h3>
+          </div>
+        </article>
+        <article class="proof-card" data-cat="digital" data-reveal>
+          <div class="proof-visual">
+            <img src="media/work/digital/ever-green-5.webp" alt="Ever green 5" loading="lazy" decoding="async" width="1080"
+              height="1080" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+          <div class="proof-caption">
+            <span class="mono cat-tag">DIGITAL</span>
+            <h3>Ever green 5</h3>
+          </div>
+        </article>
+        <article class="proof-card" data-cat="digital" data-reveal>
+          <div class="proof-visual">
+            <img src="media/work/digital/eyeplus-july15-32-stv.webp" alt="Eyeplus_July15-32 STV" loading="lazy"
+              decoding="async" width="1400" height="1400" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+          <div class="proof-caption">
+            <span class="mono cat-tag">DIGITAL</span>
+            <h3>Eyeplus_July15-32 STV</h3>
+          </div>
+        </article>
+        <article class="proof-card" data-cat="digital" data-reveal>
+          <div class="proof-visual">
+            <img src="media/work/digital/goldenbee-feb-carousel-1.webp" alt="_Goldenbee_ feb-Carousel_1" loading="lazy"
+              decoding="async" width="1080" height="1080" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+          <div class="proof-caption">
+            <span class="mono cat-tag">DIGITAL</span>
+            <h3>_Goldenbee_ feb-Carousel_1</h3>
+          </div>
+        </article>
+        <article class="proof-card" data-cat="motion" data-reveal>
+          <div class="proof-visual">
+            <video data-src="media/work/motion/collegentry-june-01-final.mp4" poster="media/work/motion/collegentry-june-01-final-poster.webp" preload="none" data-autoplay="true" loop muted playsinline width="720" height="1280" style="width: 100%; height: 100%; object-fit: cover;"></video>
+          </div>
+          <div class="proof-caption">
+            <span class="mono cat-tag">MOTION</span>
+            <h3>Collegentry June 01-Final</h3>
+          </div>
+        </article>
+        <article class="proof-card" data-cat="motion" data-reveal>
+          <div class="proof-visual">
+            <video data-src="media/work/motion/fs-reel-4-final01.mp4" poster="media/work/motion/fs-reel-4-final01-poster.webp" preload="none" data-autoplay="true" loop muted playsinline width="720" height="1280" style="width: 100%; height: 100%; object-fit: cover;"></video>
+          </div>
+          <div class="proof-caption">
+            <span class="mono cat-tag">MOTION</span>
+            <h3>Fs Reel 4-Final01</h3>
+          </div>
+        </article>
+        <article class="proof-card" data-cat="motion" data-reveal>
+          <div class="proof-visual">
+            <video data-src="media/work/motion/regnf-r-june-23-final.mp4" poster="media/work/motion/regnf-r-june-23-final-poster.webp" preload="none" data-autoplay="true" loop muted playsinline width="720" height="1280" style="width: 100%; height: 100%; object-fit: cover;"></video>
+          </div>
+          <div class="proof-caption">
+            <span class="mono cat-tag">MOTION</span>
+            <h3>Regnf R-June 23 -Final</h3>
+          </div>
+        </article>
+        <article class="proof-card" data-cat="motion" data-reveal>
+          <div class="proof-visual">
+            <video data-src="media/work/motion/uta-reel-04.mp4" poster="media/work/motion/uta-reel-04-poster.webp" preload="none" data-autoplay="true" loop muted playsinline width="720" height="1280" style="width: 100%; height: 100%; object-fit: cover;"></video>
+          </div>
+          <div class="proof-caption">
+            <span class="mono cat-tag">MOTION</span>
+            <h3>Uta-Reel 04</h3>
+          </div>
+        </article>
+        <article class="proof-card" data-cat="motion" data-reveal>
+          <div class="proof-visual">
+            <video data-src="media/work/motion/vaari-mahal-reel-02.mp4" poster="media/work/motion/vaari-mahal-reel-02-poster.webp" preload="none" data-autoplay="true" loop muted playsinline width="720" height="1280" style="width: 100%; height: 100%; object-fit: cover;"></video>
+          </div>
+          <div class="proof-caption">
+            <span class="mono cat-tag">MOTION</span>
+            <h3>Vaari Mahal-Reel 02</h3>
+          </div>
+        </article>
+        <article class="proof-card" data-cat="motion" data-reveal>
+          <div class="proof-visual">
+            <video data-src="media/work/motion/vinayaka-may-01.mp4" poster="media/work/motion/vinayaka-may-01-poster.webp" preload="none" data-autoplay="true" loop muted playsinline width="720" height="1280" style="width: 100%; height: 100%; object-fit: cover;"></video>
+          </div>
+          <div class="proof-caption">
+            <span class="mono cat-tag">MOTION</span>
+            <h3>Vinayaka May 01</h3>
+          </div>
+        </article>
+        <article class="proof-card" data-cat="motion" data-reveal>
+          <div class="proof-visual">
+            <video data-src="media/work/motion/vinayaka-may-2.mp4" poster="media/work/motion/vinayaka-may-2-poster.webp" preload="none" data-autoplay="true" loop muted playsinline width="720" height="1280" style="width: 100%; height: 100%; object-fit: cover;"></video>
+          </div>
+          <div class="proof-caption">
+            <span class="mono cat-tag">MOTION</span>
+            <h3>Vinayaka May 2</h3>
+          </div>
+        </article>
+        <article class="proof-card" data-cat="motion" data-reveal>
+          <div class="proof-visual">
+            <video data-src="media/work/motion/vinayaka-drive.mp4" poster="media/work/motion/vinayaka-drive-poster.webp" preload="none" data-autoplay="true" loop muted playsinline width="720" height="1280" style="width: 100%; height: 100%; object-fit: cover;"></video>
+          </div>
+          <div class="proof-caption">
+            <span class="mono cat-tag">MOTION</span>
+            <h3>Vinayaka, Drive</h3>
+          </div>
+        </article>
+        <article class="proof-card" data-cat="uiux" data-reveal>
+          <div class="proof-visual">
+            <img src="media/work/ui-ux/budget-tracker.webp" alt="Budget tracker" loading="lazy" decoding="async"
+              width="1400" height="788" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+          <div class="proof-caption">
+            <span class="mono cat-tag">UI-UX</span>
+            <h3>Budget tracker</h3>
+          </div>
+        </article>
+        <article class="proof-card" data-cat="uiux" data-reveal>
+          <div class="proof-visual">
+            <img src="media/work/ui-ux/fine.webp" alt="Fine" loading="lazy" decoding="async" width="1400" height="788"
+              style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+          <div class="proof-caption">
+            <span class="mono cat-tag">UI-UX</span>
+            <h3>Fine</h3>
+          </div>
+        </article>
+        <article class="proof-card" data-cat="uiux" data-reveal>
+          <div class="proof-visual">
+            <img src="media/work/ui-ux/pro-logix.webp" alt="Pro logix" loading="lazy" decoding="async" width="1400"
+              height="674" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+          <div class="proof-caption">
+            <span class="mono cat-tag">UI-UX</span>
+            <h3>Pro logix</h3>
+          </div>
+        </article>
+        <article class="proof-card" data-cat="uiux" data-reveal>
+          <div class="proof-visual">
+            <img src="media/work/ui-ux/purple.webp" alt="Purple" loading="lazy" decoding="async" width="1400" height="788"
+              style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+          <div class="proof-caption">
+            <span class="mono cat-tag">UI-UX</span>
+            <h3>Purple</h3>
+          </div>
+        </article>
+        <article class="proof-card" data-cat="uiux" data-reveal>
+          <div class="proof-visual">
+            <img src="media/work/ui-ux/travel.webp" alt="Travel" loading="lazy" decoding="async" width="1400" height="1114"
+              style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+          <div class="proof-caption">
+            <span class="mono cat-tag">UI-UX</span>
+            <h3>Travel</h3>
+          </div>
+        </article>
+        <article class="proof-card" data-cat="uiux" data-reveal>
+          <div class="proof-visual">
+            <img src="media/work/ui-ux/yav-1.webp" alt="Yav 1" loading="lazy" decoding="async" width="1389" height="1080"
+              style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+          <div class="proof-caption">
+            <span class="mono cat-tag">UI-UX</span>
+            <h3>Yav 1</h3>
+          </div>
+        </article>
+        <article class="proof-card" data-cat="uiux" data-reveal>
+          <div class="proof-visual">
+            <img src="media/work/ui-ux/yav-home.webp" alt="Yav home" loading="lazy" decoding="async" width="1400"
+              height="908" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+          <div class="proof-caption">
+            <span class="mono cat-tag">UI-UX</span>
+            <h3>Yav home</h3>
+          </div>
+        </article>
+        <article class="proof-card" data-cat="uiux" data-reveal>
+          <div class="proof-visual">
+            <img src="media/work/ui-ux/yav.webp" alt="Yav" loading="lazy" decoding="async" width="1035" height="1400"
+              style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+          <div class="proof-caption">
+            <span class="mono cat-tag">UI-UX</span>
+            <h3>Yav</h3>
+          </div>
+        </article>
+      </div>
+      <!-- Behance Explore CTA inside black Selected Work section -->
+      <div class="behance-cta-wrap" data-reveal>
+        <a href="https://www.behance.net/kaviyarasanmurugan" target="_blank" rel="noopener noreferrer"
+          class="behance-cta-card" aria-label="Explore my work on Behance">
+          <span class="mono behance-tag">EXPLORE MORE WORK</span>
+          <span class="behance-title">See more selected work on Behance <span class="behance-arrow"
+              aria-hidden="true">→</span></span>
+        </a>
+      </div>
+    </section>
+
+    <!-- CONTACT — Clean White Section -->
+    <section class="section section-contact" id="contact">
+      <div class="contact-clean-wrap" data-reveal>
+
+        <span class="tag mono contact-tag-clean">LET'S CONNECT</span>
+
+        <!-- 2-col contact grid -->
+        <div class="contact-grid">
+
+          <a href="mailto:kaviyarasanm87@gmail.com" class="cg-card" id="contact-email">
+            <span class="cg-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                <rect x="2.5" y="4.5" width="19" height="15" rx="2" />
+                <path d="M3.5 6.5 12 13l8.5-6.5" />
+              </svg>
+            </span>
+            <span class="cg-body">
+              <span class="cg-label mono">Email</span>
+              <span class="cg-value">kaviyarasanm87@gmail.com</span>
+            </span>
+          </a>
+
+          <a href="https://wa.me/919360595521?text=Can%20we%20talk%20right%20now%3F" target="_blank" rel="noopener"
+            class="cg-card" id="contact-whatsapp">
+            <span class="cg-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+              </svg>
+            </span>
+            <span class="cg-body">
+              <span class="cg-label mono">WhatsApp</span>
+              <span class="cg-value">+91 93605 95521</span>
+            </span>
+          </a>
+
+          <a href="https://linkedin.com/in/kaviyarasanmurugan" target="_blank" rel="noopener" class="cg-card"
+            id="contact-linkedin">
+            <span class="cg-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M4.98 3.5a2.48 2.48 0 1 0 0 4.96 2.48 2.48 0 0 0 0-4.96ZM2.9 9.75h4.14V21H2.9V9.75Zm7.02 0h3.97v1.54h.06c.55-1.04 1.9-2.14 3.9-2.14 4.17 0 4.94 2.74 4.94 6.3V21h-4.14v-4.98c0-1.19-.02-2.72-1.66-2.72-1.66 0-1.92 1.3-1.92 2.63V21H10Z" />
+              </svg>
+            </span>
+            <span class="cg-body">
+              <span class="cg-label mono">LinkedIn</span>
+              <span class="cg-value">linkedin.com/in/kaviyarasanmurugan</span>
+            </span>
+          </a>
+
+          <a href="https://behance.net/kaviyarasanm" target="_blank" rel="noopener" class="cg-card"
+            id="contact-behance">
+            <span class="cg-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M7.8 12.4c1.1-.5 1.7-1.4 1.7-2.7 0-2.3-1.7-3.4-3.9-3.4H1v13h4.9c2.4 0 4.4-1.2 4.4-3.8 0-1.6-.8-2.6-2.5-3.1ZM3.7 8.2h2.4c1 0 1.8.4 1.8 1.5 0 1-.7 1.5-1.8 1.5H3.7V8.2Zm2.6 9H3.7v-3.4h2.7c1.2 0 2 .5 2 1.7 0 1.2-.9 1.7-2.1 1.7ZM17.8 8.9c-3 0-4.9 2.1-4.9 5.1 0 3.1 1.8 5.1 5 5.1 2.2 0 3.9-1 4.5-3h-2.4c-.3.7-1.1 1.1-2 1.1-1.4 0-2.3-.8-2.4-2.4h7c.1-3.2-1.4-5.9-4.8-5.9Zm-2.2 4.1c.2-1.3 1-2.1 2.2-2.1 1.2 0 1.9.9 2 2.1h-4.2ZM14.2 6.3h6.1v1.3h-6.1z" />
+              </svg>
+            </span>
+            <span class="cg-body">
+              <span class="cg-label mono">Behance</span>
+              <span class="cg-value">behance.net/kaviyarasanm</span>
+            </span>
+          </a>
+
+          <a href="https://instagram.com/mr.kaviyarasan" target="_blank" rel="noopener" class="cg-card"
+            id="contact-instagram">
+            <span class="cg-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                <rect x="3" y="3" width="18" height="18" rx="5" />
+                <circle cx="12" cy="12" r="4.2" />
+                <circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none" />
+              </svg>
+            </span>
+            <span class="cg-body">
+              <span class="cg-label mono">Instagram</span>
+              <span class="cg-value">instagram.com/mr.kaviyarasan</span>
+            </span>
+          </a>
+
+        </div><!-- /contact-grid -->
+
+        <!-- Primary CTA -->
+        <div class="contact-cta-wrap">
+          <a href="https://wa.me/919360595521?text=Can%20we%20talk%20right%20now%3F" target="_blank" rel="noopener"
+            class="contact-cta-btn" id="btn-lets-connect">
+            <svg class="cta-wa-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+            </svg>
+            <span>Let's Connect</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer mono">
+    <span>© <span id="year"></span> Mr. Kaviyarasan </span>
+    <span class="footer-marks">+ + +</span>
+  </footer>
+
+  <script src="script.js"></script>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/919360595521?text=Can%20we%20talk%20right%20now%3F" target="_blank" rel="noopener"
+    class="fab-wa" id="fabWhatsapp" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path
+        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+    </svg>
+    <span class="fab-wa-tooltip">Chat on WhatsApp</span>
+  </a>
+
+</body>
+
+</html>
