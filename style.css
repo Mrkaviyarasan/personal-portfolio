@@ -233,12 +233,12 @@ p{ margin:0; }
 }
 .btn-solid{ background: var(--ink); color: var(--paper); }
 .btn-solid:hover{
-  background: var(--magenta); transform: translateY(-2px);
+  background: #FFD400; color: var(--ink); transform: translateY(-2px);
   box-shadow: 0 8px 24px rgba(236,8,104,0.3);
 }
 .btn-ghost{ border: 1px solid rgba(10,10,10,0.2); background: transparent; }
 .btn-ghost:hover{
-  background: var(--ink); color: var(--paper); transform: translateY(-2px);
+  background: #FFD400; color: var(--ink); transform: translateY(-2px);
   box-shadow: 0 8px 24px rgba(10,10,10,0.15);
 }
 
@@ -746,8 +746,8 @@ p{ margin:0; }
 .tab:hover{
   transform: translateY(-3px);
   border-color: rgba(255,255,255,0.4);
-  color: #ffffff;
-  background: rgba(255,255,255,0.12);
+  color: #000000;
+  background: #FFD400;
   box-shadow: 0 6px 20px rgba(0,0,0,0.3);
 }
 .tab.active{
