@@ -128,7 +128,7 @@ p{ margin:0; }
 .nav-links a:hover{ color: var(--ink); }
 .nav-links a:not(.nav-cta)::after{
   content:""; position:absolute; left:0; right:0; bottom:0; height:1.5px;
-  background: var(--magenta); transform: scaleX(0); transform-origin:left;
+  background: #FFD400; transform: scaleX(0); transform-origin:left;
   transition: transform .3s var(--ease);
 }
 .nav-links a:not(.nav-cta):hover::after,
@@ -233,7 +233,7 @@ p{ margin:0; }
 }
 .btn-solid{ background: var(--ink); color: var(--paper); }
 .btn-solid:hover{
-  background: #FFD400; color: var(--ink); transform: translateY(-2px);
+  background: var(--magenta); color: var(--ink); transform: translateY(-2px);
   box-shadow: 0 8px 24px rgba(236,8,104,0.3);
 }
 .btn-ghost{ border: 1px solid rgba(10,10,10,0.2); background: transparent; }
