@@ -337,7 +337,7 @@ p{ margin:0; }
 .section-dark .contact-ticket{ max-width: var(--container);
   margin-left:auto; margin-right:auto;
   padding-left: clamp(20px,5vw,56px); padding-right: clamp(20px,5vw,56px); }
-.section-dark{ padding: 140px 0; }
+.section-dark{ padding: 80px 0; }
 
 .section-head{ margin-bottom: 64px; max-width: 640px; }
 .section-head--center{ text-align:center; margin-left:auto; margin-right:auto; max-width:680px; }
@@ -729,7 +729,7 @@ p{ margin:0; }
   flex-wrap: wrap;
   margin-bottom: 96px;
   padding-bottom: 20px;
-  padding-top: 5px;
+  padding-top: 3px;
 }
 .tab{
   background: rgba(255,255,255,0.05);
