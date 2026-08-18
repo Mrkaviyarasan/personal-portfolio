@@ -863,7 +863,7 @@ p{ margin:0; }
   color: #090209;
   transform: translateX(6px);
 }
-}
+
 
 @media (max-width: 640px) {
   .behance-cta-wrap {
