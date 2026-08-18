@@ -795,7 +795,7 @@ p{ margin:0; }
    BEHANCE EXPLORATION CTA — Minimal dark section extension
    ========================================================================== */
 .behance-cta-wrap {
-  margin-top: 56px;
+  margin-top: 100px;
   padding-bottom: 24px;
   text-align: center;
   max-width: var(--container);
@@ -821,7 +821,7 @@ p{ margin:0; }
 }
 
 .behance-cta-card:hover {
-  background: rgba(255, 255, 255, 0.08);
+  background: #FFD400;
   border-color: rgba(255, 255, 255, 0.3);
   transform: translateY(-3px);
 }
@@ -831,6 +831,10 @@ p{ margin:0; }
   letter-spacing: 0.16em;
   color: var(--magenta);
   text-transform: uppercase;
+}
+
+.behance-cta-card:hover .behance-tag {
+  color: hsl(0, 0%, 0%);
 }
 
 .behance-title {
@@ -845,7 +849,7 @@ p{ margin:0; }
 }
 
 .behance-cta-card:hover .behance-title {
-  color: #ffffff;
+  color: hsl(0, 67%, 1%);
 }
 
 .behance-arrow {
@@ -856,7 +860,9 @@ p{ margin:0; }
 }
 
 .behance-cta-card:hover .behance-arrow {
+  color: #090209;
   transform: translateX(6px);
+}
 }
 
 @media (max-width: 640px) {
@@ -869,6 +875,7 @@ p{ margin:0; }
   }
 }
 .proof-visual{ position:relative; aspect-ratio: 4/3; overflow:hidden; }
+
 .proof-caption{ padding:18px 20px 22px; }
 .cat-tag{ display:block; font-size:10px; letter-spacing:.14em; color: var(--yellow); margin-bottom:8px; }
 .proof-caption h3{ font-size:1rem; margin-bottom:6px; }
