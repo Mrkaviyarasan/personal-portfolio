@@ -736,7 +736,7 @@ p{ margin:0; }
   padding-top: 3px;
 }
 .tab{
-  background: rgba(255,255,255,0.05);
+  background: hsl(0, 0%, 99%);
   border: 1px solid rgba(255,255,255,0.15);
   color: #FFD400(255,255,255,0.85);
   padding: 12px 24px;
