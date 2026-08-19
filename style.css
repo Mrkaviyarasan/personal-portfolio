@@ -755,9 +755,9 @@ p{ margin:0; }
   box-shadow: 0 6px 20px rgba(0,0,0,0.3);
 }
 .tab.active{
-  background: #FFD400;
+  background: hsl(60, 14%, 99%);
   color: var(--ink);
-  border-color: #FFD400;
+  border-color: hsl(0, 0%, 100%);
   box-shadow: 0 6px 24px rgba(255,255,255,0.25);
   transform: translateY(-1px);
 }
